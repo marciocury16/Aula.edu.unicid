@@ -6,6 +6,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
 
 public class TelaApresentacao extends JFrame {
 
@@ -35,8 +36,11 @@ public class TelaApresentacao extends JFrame {
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Tela de apresenta\u00E7\u00E3o");
+		lblNewLabel.setBounds(145, 25, 150, 14);
+		contentPane.add(lblNewLabel);
 	}
-
 }
