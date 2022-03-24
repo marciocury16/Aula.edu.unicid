@@ -19,10 +19,10 @@ import java.awt.event.ActionEvent;
 public class Tela01 extends JFrame {
 
 	private JPanel contentPane;
-	private JLabel lblNome;
-	private JLabel lblEndereo;
-	private JLabel lblGnero;
-	private JLabel lblEstadoCivil;
+	private JLabel btnNome;
+	private JLabel btnendeco;
+	private JLabel btnGenero;
+	private JLabel btnEstadoCivil;
 	private JTextField txtNome;
 	private JTextField txtEndereco;
 	private JComboBox cmbGenero;
@@ -59,25 +59,25 @@ public class Tela01 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		lblNome = new JLabel("Nome:");
-		lblNome.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNome.setBounds(10, 11, 49, 21);
-		contentPane.add(lblNome);
+		btnNome = new JLabel("Nome:");
+		btnNome.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnNome.setBounds(10, 11, 49, 21);
+		contentPane.add(btnNome);
 		
-		lblEndereo = new JLabel("Endereço:");
-		lblEndereo.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblEndereo.setBounds(10, 32, 75, 21);
-		contentPane.add(lblEndereo);
+		btnendeco = new JLabel("Endere\u00E7o:");
+		btnendeco.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnendeco.setBounds(10, 32, 75, 21);
+		contentPane.add(btnendeco);
 		
-		lblGnero = new JLabel("Gênero:");
-		lblGnero.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblGnero.setBounds(10, 55, 59, 21);
-		contentPane.add(lblGnero);
+		btnGenero = new JLabel("G\u00EAnero:");
+		btnGenero.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnGenero.setBounds(10, 55, 59, 21);
+		contentPane.add(btnGenero);
 		
-		lblEstadoCivil = new JLabel("Estado Civil:");
-		lblEstadoCivil.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblEstadoCivil.setBounds(10, 77, 92, 21);
-		contentPane.add(lblEstadoCivil);
+		btnEstadoCivil = new JLabel("Estado Civil:");
+		btnEstadoCivil.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnEstadoCivil.setBounds(10, 77, 92, 21);
+		contentPane.add(btnEstadoCivil);
 		
 		txtNome = new JTextField();
 		txtNome.setBounds(119, 14, 320, 20);
@@ -90,12 +90,12 @@ public class Tela01 extends JFrame {
 		contentPane.add(txtEndereco);
 		
 		cmbGenero = new JComboBox();
-		cmbGenero.setModel(new DefaultComboBoxModel(new String[] {"Selecionar uma opção:", "Masculino Cis", "Feminino Cis", "Masculino Trans", "Femino Trans", "Não Binário"}));
+		cmbGenero.setModel(new DefaultComboBoxModel(new String[] {"Selecionar uma op\u00E7\u00E3o:", "Masculino Cis", "Feminino Cis", "Masculino Trans", "Femino Trans", "N\u00E3o Bin\u00E1rio"}));
 		cmbGenero.setBounds(237, 58, 202, 20);
 		contentPane.add(cmbGenero);
 		
 		cmbEstadoCivil = new JComboBox();
-		cmbEstadoCivil.setModel(new DefaultComboBoxModel(new String[] {"Selecione uma opção:", "Casado (a)", "Solteiro (a)", "Divorciado (a)", "Viúvo (a)"}));
+		cmbEstadoCivil.setModel(new DefaultComboBoxModel(new String[] {"Selecione uma op\u00E7\u00E3o:", "Casado (a)", "Solteiro (a)", "Divorciado (a)", "Vi\u00FAvo (a)"}));
 		cmbEstadoCivil.setBounds(237, 80, 202, 20);
 		contentPane.add(cmbEstadoCivil);
 		
@@ -139,3 +139,4 @@ public class Tela01 extends JFrame {
 	txtAreaMostrar=new TextArea();txtAreaMostrar.setBounds(10,154,429,151);contentPane.add(txtAreaMostrar);
 }
 }
+
