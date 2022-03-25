@@ -106,9 +106,9 @@ public class Tela01 extends JFrame {
 				//==============================================
 				
 				txtAreaMostrar.append("nome........" + txtNome.getText()+ "\n");
-				txtAreaMostrar.append("Endereco......" + txtEndereco.getText()+ "\n");
-				txtAreaMostrar.append("Gï¿½nero........" + cmbGenero.getSelectedIndex() + "\n");
-				
+				txtAreaMostrar.append("Endereço......" + txtEndereco.getText()+ "\n");
+				txtAreaMostrar.append("Gênero........" + cmbGenero.getSelectedIndex() + "\n");
+				txtAreaMostrar.append("Estado Civil........"+ (String) cmbEstadoCivil.getSelectedItem() + "\n");
 				
 				//==============================================
 				
