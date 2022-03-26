@@ -24,14 +24,14 @@ public class Tela02 extends JFrame {
 	private JLabel btnPote2l;
 	private JLabel btnQtde;
 	private JLabel btnPrecoUnitario;
-	private JTextField textQtdeSorveteDeFtrutas;
-	private JTextField textPrecoSorveteDeFtrutas;
-	private JTextField textQtdeChocolateFrutas;
-	private JTextField textPrecoChocolateFrutas;
-	private JTextField textQtdePote2l;
-	private JTextField textPrecoPote2l;
-	private JTextField txtQtdeBola;
-	private JTextField txtPrecoBola;
+	private JTextField textQtd1;
+	private JTextField textPreco1;
+	private JTextField textQtd2;
+	private JTextField textPreco2;
+	private JTextField textQtd4;
+	private JTextField textPreco4;
+	private JTextField textQtd3;
+	private JTextField textPreco3;
 	private JTextField textTotal;
 	private JLabel btnTotal;
 	private JButton btnLimpar;
@@ -106,45 +106,45 @@ public class Tela02 extends JFrame {
 		btnPrecoUnitario.setBounds(263, 32, 108, 19);
 		contentPane.add(btnPrecoUnitario);
 		
-		textQtdeSorveteDeFtrutas = new JTextField();
-		textQtdeSorveteDeFtrutas.setBounds(151, 68, 109, 20);
-		contentPane.add(textQtdeSorveteDeFtrutas);
-		textQtdeSorveteDeFtrutas.setColumns(10);
+		textQtd1 = new JTextField();
+		textQtd1.setBounds(151, 68, 109, 20);
+		contentPane.add(textQtd1);
+		textQtd1.setColumns(10);
 		
-		textPrecoSorveteDeFtrutas = new JTextField();
-		textPrecoSorveteDeFtrutas.setBounds(263, 68, 114, 20);
-		contentPane.add(textPrecoSorveteDeFtrutas);
-		textPrecoSorveteDeFtrutas.setColumns(10);
+		textPreco1 = new JTextField();
+		textPreco1.setBounds(263, 68, 114, 20);
+		contentPane.add(textPreco1);
+		textPreco1.setColumns(10);
 		
-		textQtdeChocolateFrutas = new JTextField();
-		textQtdeChocolateFrutas.setColumns(10);
-		textQtdeChocolateFrutas.setBounds(151, 90, 109, 20);
-		contentPane.add(textQtdeChocolateFrutas);
+		textQtd2 = new JTextField();
+		textQtd2.setColumns(10);
+		textQtd2.setBounds(151, 90, 109, 20);
+		contentPane.add(textQtd2);
 		
-		textPrecoChocolateFrutas = new JTextField();
-		textPrecoChocolateFrutas.setColumns(10);
-		textPrecoChocolateFrutas.setBounds(263, 90, 114, 20);
-		contentPane.add(textPrecoChocolateFrutas);
+		textPreco2 = new JTextField();
+		textPreco2.setColumns(10);
+		textPreco2.setBounds(263, 90, 114, 20);
+		contentPane.add(textPreco2);
 		
-		textQtdePote2l = new JTextField();
-		textQtdePote2l.setColumns(10);
-		textQtdePote2l.setBounds(151, 139, 109, 20);
-		contentPane.add(textQtdePote2l);
+		textQtd4 = new JTextField();
+		textQtd4.setColumns(10);
+		textQtd4.setBounds(151, 139, 109, 20);
+		contentPane.add(textQtd4);
 		
-		textPrecoPote2l = new JTextField();
-		textPrecoPote2l.setColumns(10);
-		textPrecoPote2l.setBounds(263, 139, 114, 20);
-		contentPane.add(textPrecoPote2l);
+		textPreco4 = new JTextField();
+		textPreco4.setColumns(10);
+		textPreco4.setBounds(263, 139, 114, 20);
+		contentPane.add(textPreco4);
 		
-		txtQtdeBola = new JTextField();
-		txtQtdeBola.setColumns(10);
-		txtQtdeBola.setBounds(151, 115, 109, 20);
-		contentPane.add(txtQtdeBola);
+		textQtd3 = new JTextField();
+		textQtd3.setColumns(10);
+		textQtd3.setBounds(151, 115, 109, 20);
+		contentPane.add(textQtd3);
 		
-		txtPrecoBola = new JTextField();
-		txtPrecoBola.setColumns(10);
-		txtPrecoBola.setBounds(263, 115, 114, 20);
-		contentPane.add(txtPrecoBola);
+		textPreco3 = new JTextField();
+		textPreco3.setColumns(10);
+		textPreco3.setBounds(263, 115, 114, 20);
+		contentPane.add(textPreco3);
 		
 		textTotal = new JTextField();
 		textTotal.setColumns(10);
@@ -163,14 +163,14 @@ public class Tela02 extends JFrame {
 				
 				//===============================================
 				
-				textQtdeSorveteDeFtrutas.setText(null);
-				textPrecoSorveteDeFtrutas.setText(null);
-				textQtdeChocolateFrutas.setText(null);
-				textPrecoChocolateFrutas.setText(null);
-				textQtdePote2l.setText(null);
-				textPrecoPote2l.setText(null);
-				txtQtdeBola.setText(null);
-				txtPrecoBola.setText(null);
+				textQtd1.setText(null);
+				textPreco1.setText(null);
+				textQtd2.setText(null);
+				textPreco2.setText(null);
+				textQtd4.setText(null);
+				textPreco4.setText(null);
+				textQtd3.setText(null);
+				textPreco3.setText(null);
 				textTotal.setText(null);						
 				
 				//===============================================
@@ -188,20 +188,23 @@ public class Tela02 extends JFrame {
 				
 				//===================================
 				
-				int textQtdeSorveteDeFtrutas = Intereger.parseInt(textQtdeSorveteDeFtrutas.getText());
-				double textPrecoSorveteDeFtrutas = double.parseDouble(textPrecoSorveteDeFtrutas.getText());
-				int textQtdeChocolateFrutas = Intereger.parseDouble(textQtdeChocolateFrutas.getText());
-				double textPrecoChocolateFrutas = double.parseDouble(textPrecoChocolateFrutas.getText);
+				int textQtde1 = Integer.parseInt(textQtd1.getText());
+				int textQtde2 = Integer.parseInt(textQtd2.getText());
+				int textQtde3 = Integer.parseInt(textQtd3.getText());
+				int textQtde4 = Integer.parseInt(textQtd4.getText());
+				
+				double textPreco1 = Double.parseDouble(textPreco1.getText());
+				double textPreco2 = Double.parseDouble(textPreco2.getText());
+				double textPreco3 = Double.parseDouble(textPreco3.getText());
+				double textPreco4 = Double.parseDouble(textPreco4.getText());
 				
 				
-				
-				double resultado = (textQtdeSorveteDeFtrutas * textPrecoSorveteDeFtrutas ) +
-								   (textQtdeChocolateFrutas * extPrecoChocolateFrutas ) +	
-								   (textQtdeSorveteDeFtrutas * textPrecoSorveteDeFtrutas ) +
-								   (textQtdeSorveteDeFtrutas * textPrecoSorveteDeFtrutas ) ;
+				double resultado =       (textQtde1 * textPreco1 ) +
+						   				 (textQtde2 * textPreco2 ) +	
+						   				 (textQtde3 * textPreco3 ) +
+						   				 (textQtde4 * textPreco4);
 				
 				textTotal.setText(String.valueOf(resultado));
-				
 				
 				//===================================
 				
