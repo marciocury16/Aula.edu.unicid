@@ -1,4 +1,4 @@
-package Aula03;
+package Aula;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

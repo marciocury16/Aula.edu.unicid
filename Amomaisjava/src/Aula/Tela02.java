@@ -1,4 +1,4 @@
-package Aula03;
+package Aula;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -193,16 +193,16 @@ public class Tela02 extends JFrame {
 				int textQtde3 = Integer.parseInt(textQtd3.getText());
 				int textQtde4 = Integer.parseInt(textQtd4.getText());
 				
-				double textPreco1 = Double.parseDouble(textPreco1.getText());
-				double textPreco2 = Double.parseDouble(textPreco2.getText());
-				double textPreco3 = Double.parseDouble(textPreco3.getText());
-				double textPreco4 = Double.parseDouble(textPreco4.getText());
+				double preco1 = Double.parseDouble(textPreco1.getText());
+				double preco2 = Double.parseDouble(textPreco2.getText());
+				double preco3 = Double.parseDouble(textPreco3.getText());
+				double preco4 = Double.parseDouble(textPreco4.getText());
 				
 				
-				double resultado =       (textQtde1 * textPreco1 ) +
-						   				 (textQtde2 * textPreco2 ) +	
-						   				 (textQtde3 * textPreco3 ) +
-						   				 (textQtde4 * textPreco4);
+				double resultado =       (textQtde1 * preco1 ) +
+						   				 (textQtde2 * preco2 ) +	
+						   				 (textQtde3 * preco3 ) +
+						   				 (textQtde4 * preco4);
 				
 				textTotal.setText(String.valueOf(resultado));
 				
