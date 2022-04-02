@@ -144,4 +144,11 @@ public class DadosPessoais extends JFrame {
 		contentPane.add(txtCelular);
 		txtCelular.setColumns(10);
 	}
+	/**
+	 * @wbp.factory
+	 */
+	public static JPanel createJPanel() {
+		JPanel panel = new JPanel();
+		return panel;
+	}
 }
